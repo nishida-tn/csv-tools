@@ -82,7 +82,7 @@ class HomeViewModelImpl : ViewModel(), HomeViewModel {
                     }
                     _uiState.update {
                         it.copy(
-                            inputText = file.readText(),
+                            resultCsv = file.readText(),
                             message = "Arquivo gerado: ${file.absolutePath}"
                         )
                     }

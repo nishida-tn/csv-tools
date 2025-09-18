@@ -61,7 +61,7 @@ compose.desktop {
                 installationPath = "C:\\Program Files\\CSV TOOLS"
                 shortcut = true
                 menuGroup = "Acqio"
-                iconFile.set(project.file("src/jvmMain/composeResources/drawable/icon.ico"))
+                iconFile.set(project.file("src/jvmMain/composeResources/drawable/icon2.ico"))
             }
 
             linux {
