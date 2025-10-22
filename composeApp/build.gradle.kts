@@ -68,6 +68,7 @@ compose.desktop {
                 packageVersion = "1.0.0"
                 debPackageVersion = "1.0.0"
                 rpmPackageVersion = "1.0.0"
+                iconFile.set(project.file("src/jvmMain/composeResources/drawable/icon.ico"))
             }
             macOS {
                 packageVersion = "1.0.0"

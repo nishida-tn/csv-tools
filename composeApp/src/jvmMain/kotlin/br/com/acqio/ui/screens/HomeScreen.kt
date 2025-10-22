@@ -42,6 +42,11 @@ fun HomeScreen(
                 onClick = { viewModel.generateCsv() },
                 text = Strings.GENERATE_CSV
             )
+
+            ButtonDefault(
+                onClick = { viewModel.convertSnsForAddOnWhiteList() },
+                text = Strings.CONVERT_TO_WHITELIST
+            )
         }
 
         if (uiState.message.isNotEmpty()) {

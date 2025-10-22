@@ -108,7 +108,32 @@ class HomeViewModelImpl : ViewModel(), HomeViewModel {
             }
         }
     }
+
+    override fun convertSnsForAddOnWhiteList() {
+        val list = uiState.value.inputText
+
+        val serialNumbers = list
+        .lines()
+        .map { it.trim() }
+        .filter { it.isNotEmpty() }
+
+        val formatSerialNumbers = serialNumbers.mapIndexed { index, sn -> 
+            if(index == serialNumbers.lastIndex) {
+                "\"$sn\""
+            } else {
+                "\"$sn\","
+            }
+        }.joinToString("\n")
+
+        _uiState.update {
+            it.copy(
+                resultCsv = formatSerialNumbers
+            )
+        }
+
+    }
 }
+
 
 private fun parseSerialNumbers(input: String): List<String> {
     val lines = input.lines().filter { it.isNotBlank() }

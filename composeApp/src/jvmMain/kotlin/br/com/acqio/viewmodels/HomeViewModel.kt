@@ -10,4 +10,5 @@ interface HomeViewModel {
     fun updateInputText(value: String)
     fun updateMessage(value: String)
     fun generateCsv()
+    fun convertSnsForAddOnWhiteList()
 }
