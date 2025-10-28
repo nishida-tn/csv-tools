@@ -46,7 +46,6 @@ fun HomeScreen(
             ButtonDefault(
                 onClick = { viewModel.convertSnsForAddOnWhiteList() },
                 text = Strings.CONVERT_TO_WHITELIST,
-                tip = "Prepara a lista de SNs para adicionar no whitlist via postman"
             )
         }
 

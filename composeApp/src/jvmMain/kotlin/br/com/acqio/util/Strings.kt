@@ -8,5 +8,5 @@ object Strings {
     const val SAVE_CSV = "Savar CSV"
     const val CANCELED_BY_USER = "Operação cancelada pelo usuário"
     const val EMPTY_LIST = "Lista vazia!"
-    const val CONVERT_TO_WHITELIST = "Convert WHITELIST"
+    const val CONVERT_TO_WHITELIST = "Converter lista"
 }
